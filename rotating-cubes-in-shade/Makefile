@@ -17,7 +17,7 @@ LIB_DIR=$(URHO_DIR)/build/lib
 
 all:
 
-build:
+build_linux:
 	g++ -o sampleApp sampleApp.cpp -O3 -I$(URHO3D_INCLUDE_DIR) -I$(3RD_PARTY_INCLUDE_DIR) -L$(LIB_DIR) -lUrho3D
 
 clean:
