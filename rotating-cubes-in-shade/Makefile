@@ -10,6 +10,23 @@
 # If you have a different folder structure, please modify the below path variables
 # according to your setup.
 #
+#
+#
+# Also, make sure that the library libUrho3D.so is discoverable at run-time. To do this,
+# first check the folder:
+#     /home/valera/projects/Urho3D-1.5/build/lib
+#
+# and see that *.so files are there. Then as user root, create the file:
+#     /etc/ld.so.conf.d/urho3d.conf
+#
+# and add to it the following line:
+#     /home/valera/projects/Urho3D-1.5/build/lib
+#
+# After saving this file, run the command as root user:
+#     ldconfig
+#
+#
+#
 # NOTE: This Makefile was successfully tested on Ubuntu 15.10 (Wily Werewolf).
 
 URHO_DIR=/home/valera/projects/Urho3D-1.5
